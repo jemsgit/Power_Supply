@@ -9425,11 +9425,11 @@ standard rectifier, 3 A, 50 V (Motorola)</description>
 <part name="C17" library="resistor" deviceset="C-EU" device="C0805" value="2n2"/>
 <part name="C18" library="resistor" deviceset="C-EU" device="C0805" value="2n2"/>
 <part name="TRANS" library="pinhead" deviceset="PINHD-1X2" device=""/>
-<part name="JP2" library="pinhead" deviceset="PINHD-1X2" device=""/>
-<part name="JP3" library="pinhead" deviceset="PINHD-1X2" device=""/>
-<part name="JP4" library="pinhead" deviceset="PINHD-1X2" device=""/>
-<part name="JP5" library="pinhead" deviceset="PINHD-1X2" device=""/>
-<part name="JP6" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="1" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="3" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="4" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="5" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="6" library="pinhead" deviceset="PINHD-1X2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9466,11 +9466,11 @@ standard rectifier, 3 A, 50 V (Motorola)</description>
 <instance part="C17" gate="G$1" x="-7.62" y="-7.62" rot="R90"/>
 <instance part="C18" gate="G$1" x="5.08" y="-7.62" rot="R90"/>
 <instance part="TRANS" gate="G$1" x="-27.94" y="20.32" rot="R180"/>
-<instance part="JP2" gate="G$1" x="180.34" y="55.88"/>
-<instance part="JP3" gate="G$1" x="180.34" y="33.02"/>
-<instance part="JP4" gate="G$1" x="180.34" y="7.62"/>
-<instance part="JP5" gate="G$1" x="180.34" y="-17.78"/>
-<instance part="JP6" gate="G$1" x="180.34" y="-40.64"/>
+<instance part="1" gate="G$1" x="180.34" y="55.88"/>
+<instance part="3" gate="G$1" x="180.34" y="33.02"/>
+<instance part="4" gate="G$1" x="180.34" y="7.62"/>
+<instance part="5" gate="G$1" x="180.34" y="-17.78"/>
+<instance part="6" gate="G$1" x="180.34" y="-40.64"/>
 </instances>
 <busses>
 </busses>
@@ -9518,7 +9518,7 @@ standard rectifier, 3 A, 50 V (Motorola)</description>
 <wire x1="157.48" y1="12.7" x2="165.1" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="12.7" x2="165.1" y2="10.16" width="0.1524" layer="91"/>
 <junction x="157.48" y="12.7"/>
-<pinref part="JP4" gate="G$1" pin="1"/>
+<pinref part="4" gate="G$1" pin="1"/>
 <wire x1="177.8" y1="10.16" x2="175.26" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="10.16" x2="175.26" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="12.7" x2="165.1" y2="12.7" width="0.1524" layer="91"/>
@@ -9535,7 +9535,7 @@ standard rectifier, 3 A, 50 V (Motorola)</description>
 <wire x1="160.02" y1="-12.7" x2="167.64" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="-12.7" x2="167.64" y2="-15.24" width="0.1524" layer="91"/>
 <junction x="160.02" y="-12.7"/>
-<pinref part="JP5" gate="G$1" pin="1"/>
+<pinref part="5" gate="G$1" pin="1"/>
 <wire x1="177.8" y1="-15.24" x2="175.26" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="-15.24" x2="175.26" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="-12.7" x2="167.64" y2="-12.7" width="0.1524" layer="91"/>
@@ -9552,7 +9552,7 @@ standard rectifier, 3 A, 50 V (Motorola)</description>
 <pinref part="C9" gate="G$1" pin="+"/>
 <wire x1="157.48" y1="58.42" x2="157.48" y2="60.96" width="0.1524" layer="91"/>
 <junction x="157.48" y="60.96"/>
-<pinref part="JP2" gate="G$1" pin="1"/>
+<pinref part="1" gate="G$1" pin="1"/>
 <wire x1="177.8" y1="58.42" x2="175.26" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="58.42" x2="175.26" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="60.96" x2="165.1" y2="60.96" width="0.1524" layer="91"/>
@@ -9569,7 +9569,7 @@ standard rectifier, 3 A, 50 V (Motorola)</description>
 <wire x1="157.48" y1="38.1" x2="165.1" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="38.1" x2="165.1" y2="35.56" width="0.1524" layer="91"/>
 <junction x="157.48" y="38.1"/>
-<pinref part="JP3" gate="G$1" pin="1"/>
+<pinref part="3" gate="G$1" pin="1"/>
 <wire x1="177.8" y1="35.56" x2="175.26" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="35.56" x2="175.26" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="38.1" x2="165.1" y2="38.1" width="0.1524" layer="91"/>
@@ -9586,7 +9586,7 @@ standard rectifier, 3 A, 50 V (Motorola)</description>
 <wire x1="160.02" y1="-35.56" x2="167.64" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="-35.56" x2="167.64" y2="-38.1" width="0.1524" layer="91"/>
 <junction x="160.02" y="-35.56"/>
-<pinref part="JP6" gate="G$1" pin="1"/>
+<pinref part="6" gate="G$1" pin="1"/>
 <wire x1="177.8" y1="-38.1" x2="175.26" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="-38.1" x2="175.26" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="-35.56" x2="167.64" y2="-35.56" width="0.1524" layer="91"/>
@@ -9698,27 +9698,27 @@ standard rectifier, 3 A, 50 V (Motorola)</description>
 <wire x1="30.48" y1="-15.24" x2="30.48" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="-10.16" x2="33.02" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="33.02" y="-10.16"/>
-<pinref part="JP2" gate="G$1" pin="2"/>
+<pinref part="1" gate="G$1" pin="2"/>
 <wire x1="177.8" y1="55.88" x2="175.26" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="55.88" x2="175.26" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="48.26" x2="165.1" y2="48.26" width="0.1524" layer="91"/>
 <junction x="165.1" y="48.26"/>
-<pinref part="JP3" gate="G$1" pin="2"/>
+<pinref part="3" gate="G$1" pin="2"/>
 <wire x1="177.8" y1="33.02" x2="175.26" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="33.02" x2="175.26" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="22.86" x2="165.1" y2="22.86" width="0.1524" layer="91"/>
 <junction x="165.1" y="22.86"/>
-<pinref part="JP4" gate="G$1" pin="2"/>
+<pinref part="4" gate="G$1" pin="2"/>
 <wire x1="177.8" y1="7.62" x2="175.26" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="7.62" x2="175.26" y2="0" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="0" x2="165.1" y2="0" width="0.1524" layer="91"/>
 <junction x="165.1" y="0"/>
-<pinref part="JP5" gate="G$1" pin="2"/>
+<pinref part="5" gate="G$1" pin="2"/>
 <wire x1="177.8" y1="-17.78" x2="175.26" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="-17.78" x2="175.26" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="-25.4" x2="167.64" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="167.64" y="-25.4"/>
-<pinref part="JP6" gate="G$1" pin="2"/>
+<pinref part="6" gate="G$1" pin="2"/>
 <wire x1="177.8" y1="-40.64" x2="175.26" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="-40.64" x2="175.26" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="-50.8" x2="167.64" y2="-50.8" width="0.1524" layer="91"/>
