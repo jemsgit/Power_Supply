@@ -9402,18 +9402,12 @@ standard rectifier, 3 A, 50 V (Motorola)</description>
 <part name="IC5" library="linear" deviceset="78*" device="T" technology="08"/>
 <part name="IC6" library="linear" deviceset="78*" device="T" technology="08"/>
 <part name="C1" library="resistor" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="C2" library="resistor" deviceset="CPOL-EU" device="E5-13" value="100u"/>
-<part name="C3" library="resistor" deviceset="CPOL-EU" device="E5-13" value="100u"/>
+<part name="C3" library="resistor" deviceset="CPOL-EU" device="E5-13" value="1000u"/>
 <part name="C4" library="resistor" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="C5" library="resistor" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="C6" library="resistor" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="C7" library="resistor" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="C8" library="resistor" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="C9" library="resistor" deviceset="CPOL-EU" device="E3.5-8" value="10u"/>
-<part name="C10" library="resistor" deviceset="CPOL-EU" device="E3.5-8" value="10u"/>
-<part name="C11" library="resistor" deviceset="CPOL-EU" device="E3.5-8" value="10u"/>
-<part name="C12" library="resistor" deviceset="CPOL-EU" device="E3.5-8" value="10u"/>
-<part name="C13" library="resistor" deviceset="CPOL-EU" device="E3.5-8" value="10u"/>
 <part name="C14" library="resistor" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="D1" library="diode" deviceset="1N5400" device=""/>
@@ -9430,6 +9424,12 @@ standard rectifier, 3 A, 50 V (Motorola)</description>
 <part name="4" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="5" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="6" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="C19" library="resistor" deviceset="CPOL-EU" device="CT7343" value="10u"/>
+<part name="C20" library="resistor" deviceset="CPOL-EU" device="CT7343" value="10u"/>
+<part name="C21" library="resistor" deviceset="CPOL-EU" device="CT7343" value="10u"/>
+<part name="C22" library="resistor" deviceset="CPOL-EU" device="CT7343" value="10u"/>
+<part name="C23" library="resistor" deviceset="CPOL-EU" device="CT7343" value="10u"/>
+<part name="C9" library="resistor" deviceset="CPOL-EU" device="E2.5-6" value="100u"/>
 </parts>
 <sheets>
 <sheet>
@@ -9443,18 +9443,12 @@ standard rectifier, 3 A, 50 V (Motorola)</description>
 <instance part="IC5" gate="A1" x="139.7" y="-12.7"/>
 <instance part="IC6" gate="A1" x="139.7" y="-35.56"/>
 <instance part="C1" gate="G$1" x="91.44" y="-2.54"/>
-<instance part="C2" gate="G$1" x="83.82" y="-2.54"/>
 <instance part="C3" gate="G$1" x="33.02" y="-2.54"/>
 <instance part="C4" gate="G$1" x="165.1" y="55.88"/>
 <instance part="C5" gate="G$1" x="165.1" y="33.02"/>
 <instance part="C6" gate="G$1" x="165.1" y="7.62"/>
 <instance part="C7" gate="G$1" x="167.64" y="-17.78"/>
 <instance part="C8" gate="G$1" x="167.64" y="-40.64"/>
-<instance part="C9" gate="G$1" x="157.48" y="55.88"/>
-<instance part="C10" gate="G$1" x="157.48" y="33.02"/>
-<instance part="C11" gate="G$1" x="157.48" y="7.62"/>
-<instance part="C12" gate="G$1" x="160.02" y="-17.78"/>
-<instance part="C13" gate="G$1" x="160.02" y="-40.64"/>
 <instance part="C14" gate="G$1" x="43.18" y="-2.54"/>
 <instance part="GND1" gate="1" x="60.96" y="-53.34"/>
 <instance part="D1" gate="1" x="-7.62" y="7.62"/>
@@ -9471,6 +9465,12 @@ standard rectifier, 3 A, 50 V (Motorola)</description>
 <instance part="4" gate="G$1" x="180.34" y="7.62"/>
 <instance part="5" gate="G$1" x="180.34" y="-17.78"/>
 <instance part="6" gate="G$1" x="180.34" y="-40.64"/>
+<instance part="C19" gate="G$1" x="157.48" y="55.88"/>
+<instance part="C20" gate="G$1" x="157.48" y="33.02"/>
+<instance part="C21" gate="G$1" x="157.48" y="7.62"/>
+<instance part="C22" gate="G$1" x="160.02" y="-17.78"/>
+<instance part="C23" gate="G$1" x="160.02" y="-40.64"/>
+<instance part="C9" gate="G$1" x="83.82" y="-2.54"/>
 </instances>
 <busses>
 </busses>
@@ -9500,18 +9500,17 @@ standard rectifier, 3 A, 50 V (Motorola)</description>
 <wire x1="129.54" y1="-35.56" x2="111.76" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="-35.56" x2="111.76" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="111.76" y="-12.7"/>
-<pinref part="C2" gate="G$1" pin="+"/>
 <wire x1="83.82" y1="0" x2="83.82" y2="5.08" width="0.1524" layer="91"/>
 <junction x="83.82" y="5.08"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="91.44" y1="0" x2="91.44" y2="5.08" width="0.1524" layer="91"/>
 <junction x="91.44" y="5.08"/>
+<pinref part="C9" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="IC4" gate="A1" pin="VO"/>
-<pinref part="C11" gate="G$1" pin="+"/>
 <wire x1="149.86" y1="12.7" x2="157.48" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="12.7" x2="157.48" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="1"/>
@@ -9523,12 +9522,12 @@ standard rectifier, 3 A, 50 V (Motorola)</description>
 <wire x1="175.26" y1="10.16" x2="175.26" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="12.7" x2="165.1" y2="12.7" width="0.1524" layer="91"/>
 <junction x="165.1" y="12.7"/>
+<pinref part="C21" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="IC5" gate="A1" pin="VO"/>
-<pinref part="C12" gate="G$1" pin="+"/>
 <wire x1="149.86" y1="-12.7" x2="160.02" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="-12.7" x2="160.02" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="1"/>
@@ -9540,6 +9539,7 @@ standard rectifier, 3 A, 50 V (Motorola)</description>
 <wire x1="175.26" y1="-15.24" x2="175.26" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="-12.7" x2="167.64" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="167.64" y="-12.7"/>
+<pinref part="C22" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -9549,7 +9549,6 @@ standard rectifier, 3 A, 50 V (Motorola)</description>
 <wire x1="149.86" y1="60.96" x2="157.48" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="60.96" x2="165.1" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="60.96" x2="165.1" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="+"/>
 <wire x1="157.48" y1="58.42" x2="157.48" y2="60.96" width="0.1524" layer="91"/>
 <junction x="157.48" y="60.96"/>
 <pinref part="1" gate="G$1" pin="1"/>
@@ -9557,12 +9556,12 @@ standard rectifier, 3 A, 50 V (Motorola)</description>
 <wire x1="175.26" y1="58.42" x2="175.26" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="60.96" x2="165.1" y2="60.96" width="0.1524" layer="91"/>
 <junction x="165.1" y="60.96"/>
+<pinref part="C19" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="IC3" gate="A1" pin="VO"/>
-<pinref part="C10" gate="G$1" pin="+"/>
 <wire x1="149.86" y1="38.1" x2="157.48" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="38.1" x2="157.48" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
@@ -9574,12 +9573,12 @@ standard rectifier, 3 A, 50 V (Motorola)</description>
 <wire x1="175.26" y1="35.56" x2="175.26" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="38.1" x2="165.1" y2="38.1" width="0.1524" layer="91"/>
 <junction x="165.1" y="38.1"/>
+<pinref part="C20" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="IC6" gate="A1" pin="VO"/>
-<pinref part="C13" gate="G$1" pin="+"/>
 <wire x1="149.86" y1="-35.56" x2="160.02" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="-35.56" x2="160.02" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="1"/>
@@ -9591,6 +9590,7 @@ standard rectifier, 3 A, 50 V (Motorola)</description>
 <wire x1="175.26" y1="-38.1" x2="175.26" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="-35.56" x2="167.64" y2="-35.56" width="0.1524" layer="91"/>
 <junction x="167.64" y="-35.56"/>
+<pinref part="C23" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -9622,7 +9622,6 @@ standard rectifier, 3 A, 50 V (Motorola)</description>
 <wire x1="60.96" y1="-10.16" x2="60.96" y2="-50.8" width="0.1524" layer="91"/>
 <junction x="124.46" y="-50.8"/>
 <wire x1="60.96" y1="-50.8" x2="124.46" y2="-50.8" width="0.1524" layer="91"/>
-<pinref part="C11" gate="G$1" pin="-"/>
 <wire x1="157.48" y1="2.54" x2="157.48" y2="0" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="0" x2="139.7" y2="0" width="0.1524" layer="91"/>
 <junction x="139.7" y="0"/>
@@ -9630,7 +9629,6 @@ standard rectifier, 3 A, 50 V (Motorola)</description>
 <wire x1="165.1" y1="2.54" x2="165.1" y2="0" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="0" x2="157.48" y2="0" width="0.1524" layer="91"/>
 <junction x="157.48" y="0"/>
-<pinref part="C9" gate="G$1" pin="-"/>
 <wire x1="157.48" y1="50.8" x2="157.48" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="48.26" x2="139.7" y2="48.26" width="0.1524" layer="91"/>
 <junction x="139.7" y="48.26"/>
@@ -9638,7 +9636,6 @@ standard rectifier, 3 A, 50 V (Motorola)</description>
 <wire x1="165.1" y1="50.8" x2="165.1" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="48.26" x2="157.48" y2="48.26" width="0.1524" layer="91"/>
 <junction x="157.48" y="48.26"/>
-<pinref part="C10" gate="G$1" pin="-"/>
 <wire x1="157.48" y1="27.94" x2="157.48" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="22.86" x2="139.7" y2="22.86" width="0.1524" layer="91"/>
 <junction x="139.7" y="22.86"/>
@@ -9646,7 +9643,6 @@ standard rectifier, 3 A, 50 V (Motorola)</description>
 <wire x1="165.1" y1="27.94" x2="165.1" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="22.86" x2="157.48" y2="22.86" width="0.1524" layer="91"/>
 <junction x="157.48" y="22.86"/>
-<pinref part="C12" gate="G$1" pin="-"/>
 <wire x1="139.7" y1="-25.4" x2="160.02" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="-25.4" x2="160.02" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="139.7" y="-25.4"/>
@@ -9654,7 +9650,6 @@ standard rectifier, 3 A, 50 V (Motorola)</description>
 <wire x1="160.02" y1="-25.4" x2="167.64" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="-25.4" x2="167.64" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="160.02" y="-25.4"/>
-<pinref part="C13" gate="G$1" pin="-"/>
 <wire x1="160.02" y1="-45.72" x2="160.02" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="-50.8" x2="139.7" y2="-50.8" width="0.1524" layer="91"/>
 <junction x="139.7" y="-50.8"/>
@@ -9666,7 +9661,6 @@ standard rectifier, 3 A, 50 V (Motorola)</description>
 <wire x1="43.18" y1="-7.62" x2="43.18" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="-10.16" x2="60.96" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="60.96" y="-10.16"/>
-<pinref part="C2" gate="G$1" pin="-"/>
 <wire x1="60.96" y1="-10.16" x2="83.82" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="-10.16" x2="83.82" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -9723,6 +9717,12 @@ standard rectifier, 3 A, 50 V (Motorola)</description>
 <wire x1="175.26" y1="-40.64" x2="175.26" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="-50.8" x2="167.64" y2="-50.8" width="0.1524" layer="91"/>
 <junction x="167.64" y="-50.8"/>
+<pinref part="C19" gate="G$1" pin="-"/>
+<pinref part="C20" gate="G$1" pin="-"/>
+<pinref part="C21" gate="G$1" pin="-"/>
+<pinref part="C22" gate="G$1" pin="-"/>
+<pinref part="C23" gate="G$1" pin="-"/>
+<pinref part="C9" gate="G$1" pin="-"/>
 </segment>
 </net>
 <net name="N$9" class="0">
